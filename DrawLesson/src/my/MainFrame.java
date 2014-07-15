@@ -39,6 +39,7 @@ public class MainFrame extends JFrame {
 		// pack the frame and show
 		this.pack();
 		// this.setSize(300, 300);
+		this.setResizable(false);
 		this.setVisible(true);
 	}
 

@@ -13,8 +13,8 @@ import javax.swing.JPanel;
 public class TrafficSignal extends JPanel {
 
 	// data model
-	private final int defaultWidth = 100;
-	private final int defaultHeight = 300;
+	private final int defaultWidth = 50;
+	private final int defaultHeight = 150;
 	private final int circleMargin = 10; // 10 pixels margin around circle
 	private final Dimension prefSize = new Dimension(defaultWidth, defaultHeight);
 	// Flags to remember which color should be filled
@@ -32,8 +32,8 @@ public class TrafficSignal extends JPanel {
 	// Paint gets called whenever the object changes, not just when
 	// it is newly created
 	@Override
-	public void paint(Graphics g) { // called by the GUI Event Handler
-		super.paint(g);
+	public void paintComponent(Graphics g) { // called by the GUI Event Handler
+		super.paintComponent(g);
 		
 		// This is where the traffic signals have to be painted/drawn
 		// initialize the panel with the traffic signals
